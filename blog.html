@@ -12,8 +12,8 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-5">
+            <div class="row align-items-center justify-content-md-center justify-content-between">
+                <div class="col-5 d-none d-md-block">
                     <nav class="header_menu">
                         <ul>
                             <li><a href="#">محصولات</a></li>
@@ -30,15 +30,67 @@
                 <div class="col-5">
                     <nav class="header_actions">
                         <ul>
-                            <li><a href="#"><i class="far fa-list"></i></a></li>
+                            <li><a href="#"><i class="far fa-list open d-md-none d-block"></i></a></li>
                             <li><a href="#"><i class="far fa-phone"></i></a></li>
-                            <li><a href="#"><i class="far fa-search"></i></a></li>
+                            <li><a href="#search"><i class="far fa-search"></i></a></li>
+                            <div id="search-box">
+                                <div class="container1">
+                                    <a class="close" href="#close"></a>
+                                    <div class="search-main">
+                                        <div class="search-inner">
+                                            <input type="text" id="inputSearch" name="firstname" placeholder="جستجو">
+                                            <span class="search-info">برای جستجو اینتر را بزنید</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+    <div class="overlay"></div>
+    <aside class="menuAside">
+        <ul class="menuAside_list">
+            <li>
+                <a href="">
+                    خانه
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    محصولات
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    سفارش محصول
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    کاتالوگ دیجیتال
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    تماس با ما
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    اخبار و مقالات
+                </a>
+            </li>
+        </ul>
+        <ul class="menuAside_social">
+            <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-telegram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+        </ul>
+    </aside>
 
     <main>
         <section class="shared_pageTitle">
@@ -66,302 +118,355 @@
 
         <section class="blog_list wrapper">
             <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="home_blog_item">
-                            <div class="blog-thumb">
-                                <a href="#">
-                                    <div class="image">
-                                        <img src="images/blog-1.jpg" alt="">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="home_blog_item">
+                                    <div class="blog-thumb">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="images/blog-1.jpg" alt="">
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="labels">
-                                    <div class="labels_item me-3">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-calendar-days"></i>
+                                    <div class="blog-content">
+                                        <div class="labels">
+                                            <div class="labels_item me-3">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-calendar-days"></i>
+                                                </div>
+                                                <span>01/1/22</span>
+                                            </div>
+                                            <div class="labels_item">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-comment"></i>
+                                                </div>
+                                                <span>2 نظر</span>
+                                            </div>
                                         </div>
-                                        <span>01/1/22</span>
-                                    </div>
-                                    <div class="labels_item">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-comment"></i>
+                                        <div class="d-flex align-items-center gap-5 justify-content-between">
+                                            <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
                                         </div>
-                                        <span>2 نظر</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-center gap-5 justify-content-between">
-                                    <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
-                                    <a href="#" class="btn btn-primary">مشاهده</a>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="home_blog_item">
+                                    <div class="blog-thumb">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="images/blog-1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="labels">
+                                            <div class="labels_item me-3">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-calendar-days"></i>
+                                                </div>
+                                                <span>01/1/22</span>
+                                            </div>
+                                            <div class="labels_item">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-comment"></i>
+                                                </div>
+                                                <span>2 نظر</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-5 justify-content-between">
+                                            <a href="#" class="title">روش های جلوگیری از تقلب دانش آموزان</a>
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="home_blog_item">
+                                    <div class="blog-thumb">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="images/blog-1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="labels">
+                                            <div class="labels_item me-3">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-calendar-days"></i>
+                                                </div>
+                                                <span>01/1/22</span>
+                                            </div>
+                                            <div class="labels_item">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-comment"></i>
+                                                </div>
+                                                <span>2 نظر</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-5 justify-content-between">
+                                            <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="home_blog_item">
+                                    <div class="blog-thumb">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="images/blog-1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="labels">
+                                            <div class="labels_item me-3">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-calendar-days"></i>
+                                                </div>
+                                                <span>01/1/22</span>
+                                            </div>
+                                            <div class="labels_item">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-comment"></i>
+                                                </div>
+                                                <span>2 نظر</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-5 justify-content-between">
+                                            <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="home_blog_item">
+                                    <div class="blog-thumb">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="images/blog-1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="labels">
+                                            <div class="labels_item me-3">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-calendar-days"></i>
+                                                </div>
+                                                <span>01/1/22</span>
+                                            </div>
+                                            <div class="labels_item">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-comment"></i>
+                                                </div>
+                                                <span>2 نظر</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-5 justify-content-between">
+                                            <a href="#" class="title">روش های جلوگیری از تقلب دانش آموزان</a>
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="home_blog_item">
+                                    <div class="blog-thumb">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="images/blog-1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="labels">
+                                            <div class="labels_item me-3">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-calendar-days"></i>
+                                                </div>
+                                                <span>01/1/22</span>
+                                            </div>
+                                            <div class="labels_item">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-comment"></i>
+                                                </div>
+                                                <span>2 نظر</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-5 justify-content-between">
+                                            <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="home_blog_item">
+                                    <div class="blog-thumb">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="images/blog-1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="labels">
+                                            <div class="labels_item me-3">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-calendar-days"></i>
+                                                </div>
+                                                <span>01/1/22</span>
+                                            </div>
+                                            <div class="labels_item">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-comment"></i>
+                                                </div>
+                                                <span>2 نظر</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-5 justify-content-between">
+                                            <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="home_blog_item">
+                                    <div class="blog-thumb">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="images/blog-1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="labels">
+                                            <div class="labels_item me-3">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-calendar-days"></i>
+                                                </div>
+                                                <span>01/1/22</span>
+                                            </div>
+                                            <div class="labels_item">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-comment"></i>
+                                                </div>
+                                                <span>2 نظر</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-5 justify-content-between">
+                                            <a href="#" class="title">روش های جلوگیری از تقلب دانش آموزان</a>
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="home_blog_item">
+                                    <div class="blog-thumb">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="images/blog-1.jpg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="labels">
+                                            <div class="labels_item me-3">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-calendar-days"></i>
+                                                </div>
+                                                <span>01/1/22</span>
+                                            </div>
+                                            <div class="labels_item">
+                                                <div class="icon me-2">
+                                                    <i class="fa-regular fa-comment"></i>
+                                                </div>
+                                                <span>2 نظر</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-5 justify-content-between">
+                                            <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
+                                            <a href="#" class="btn btn-primary">مشاهده</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center my-4">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">قبلی</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">بعدی</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="blog_details_side">
+                            <div class="blog_details_side_widget">
+                                <h4 class="title">
+                                    دسته بندی محصولات
+                                </h4>
+                                <div class="category">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                تجهیزات موتور سواری
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                ایکس ری X-RAY
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                چک و خنثی سازی (EOD)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                انواع گیت فلزیاب بازرسی بدنی
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                راکت بازرسی بدنی
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                دوربین های روزانه، شبانه و سایت ها
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                تجهیزات کنترل ترافیک
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="home_blog_item">
-                            <div class="blog-thumb">
-                                <a href="#">
-                                    <div class="image">
-                                        <img src="images/blog-1.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="labels">
-                                    <div class="labels_item me-3">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-calendar-days"></i>
-                                        </div>
-                                        <span>01/1/22</span>
-                                    </div>
-                                    <div class="labels_item">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-comment"></i>
-                                        </div>
-                                        <span>2 نظر</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-5 justify-content-between">
-                                    <a href="#" class="title">روش های جلوگیری از تقلب دانش آموزان</a>
-                                    <a href="#" class="btn btn-primary">مشاهده</a>
-                                </div>
 
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="home_blog_item">
-                            <div class="blog-thumb">
-                                <a href="#">
-                                    <div class="image">
-                                        <img src="images/blog-1.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="labels">
-                                    <div class="labels_item me-3">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-calendar-days"></i>
-                                        </div>
-                                        <span>01/1/22</span>
-                                    </div>
-                                    <div class="labels_item">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-comment"></i>
-                                        </div>
-                                        <span>2 نظر</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-5 justify-content-between">
-                                    <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
-                                    <a href="#" class="btn btn-primary">مشاهده</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="home_blog_item">
-                            <div class="blog-thumb">
-                                <a href="#">
-                                    <div class="image">
-                                        <img src="images/blog-1.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="labels">
-                                    <div class="labels_item me-3">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-calendar-days"></i>
-                                        </div>
-                                        <span>01/1/22</span>
-                                    </div>
-                                    <div class="labels_item">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-comment"></i>
-                                        </div>
-                                        <span>2 نظر</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-5 justify-content-between">
-                                    <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
-                                    <a href="#" class="btn btn-primary">مشاهده</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="home_blog_item">
-                            <div class="blog-thumb">
-                                <a href="#">
-                                    <div class="image">
-                                        <img src="images/blog-1.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="labels">
-                                    <div class="labels_item me-3">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-calendar-days"></i>
-                                        </div>
-                                        <span>01/1/22</span>
-                                    </div>
-                                    <div class="labels_item">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-comment"></i>
-                                        </div>
-                                        <span>2 نظر</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-5 justify-content-between">
-                                    <a href="#" class="title">روش های جلوگیری از تقلب دانش آموزان</a>
-                                    <a href="#" class="btn btn-primary">مشاهده</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="home_blog_item">
-                            <div class="blog-thumb">
-                                <a href="#">
-                                    <div class="image">
-                                        <img src="images/blog-1.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="labels">
-                                    <div class="labels_item me-3">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-calendar-days"></i>
-                                        </div>
-                                        <span>01/1/22</span>
-                                    </div>
-                                    <div class="labels_item">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-comment"></i>
-                                        </div>
-                                        <span>2 نظر</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-5 justify-content-between">
-                                    <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
-                                    <a href="#" class="btn btn-primary">مشاهده</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="home_blog_item">
-                            <div class="blog-thumb">
-                                <a href="#">
-                                    <div class="image">
-                                        <img src="images/blog-1.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="labels">
-                                    <div class="labels_item me-3">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-calendar-days"></i>
-                                        </div>
-                                        <span>01/1/22</span>
-                                    </div>
-                                    <div class="labels_item">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-comment"></i>
-                                        </div>
-                                        <span>2 نظر</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-5 justify-content-between">
-                                    <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
-                                    <a href="#" class="btn btn-primary">مشاهده</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="home_blog_item">
-                            <div class="blog-thumb">
-                                <a href="#">
-                                    <div class="image">
-                                        <img src="images/blog-1.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="labels">
-                                    <div class="labels_item me-3">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-calendar-days"></i>
-                                        </div>
-                                        <span>01/1/22</span>
-                                    </div>
-                                    <div class="labels_item">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-comment"></i>
-                                        </div>
-                                        <span>2 نظر</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-5 justify-content-between">
-                                    <a href="#" class="title">روش های جلوگیری از تقلب دانش آموزان</a>
-                                    <a href="#" class="btn btn-primary">مشاهده</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="home_blog_item">
-                            <div class="blog-thumb">
-                                <a href="#">
-                                    <div class="image">
-                                        <img src="images/blog-1.jpg" alt="">
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="labels">
-                                    <div class="labels_item me-3">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-calendar-days"></i>
-                                        </div>
-                                        <span>01/1/22</span>
-                                    </div>
-                                    <div class="labels_item">
-                                        <div class="icon me-2">
-                                            <i class="fa-regular fa-comment"></i>
-                                        </div>
-                                        <span>2 نظر</span>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center gap-5 justify-content-between">
-                                    <a href="#" class="title">طرز کار اشعه ایکس چیست؟</a>
-                                    <a href="#" class="btn btn-primary">مشاهده</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center my-4">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">قبلی</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">بعدی</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </section>

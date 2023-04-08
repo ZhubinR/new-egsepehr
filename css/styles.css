@@ -39386,7 +39386,7 @@ h6 {
   color: rgba(112, 114, 114, 0.9);
 }
 .home_blog_item .blog-content .title {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #1f685a;
 }
@@ -39587,42 +39587,7 @@ h6 {
   font-size: 0.9em;
   color: #707272;
 }
-.blog_details_content_desc .comment {
-  padding-top: 2.25rem;
-}
-.blog_details_content_desc .comment .desc {
-  color: #707272;
-}
-.blog_details_content_desc .comment .form-control {
-  margin-bottom: 30px;
-  box-shadow: -2px 2px 15px -7px rgba(17, 17, 17, 0.3);
-  padding: 0.5rem 1rem;
-}
-.blog_details_content_desc .comment .form-control:hover {
-  background-color: #ffffff;
-}
-.blog_details_content_desc .comment textarea {
-  padding: 0.5rem 1rem;
-  min-height: 300px;
-}
-.blog_details_content_desc .comment .btn-primary {
-  padding: 0.75rem 1.25rem;
-  background-color: #1f685a;
-  border-color: #1f685a;
-}
-.blog_details_content_desc .comment .btn-primary:hover {
-  background-color: #ffbb00;
-  border-color: #ffbb00;
-}
-@media (max-width: 768px) {
-  .blog_details_content_desc .comment .btn-primary {
-    width: 100%;
-  }
-}
 @media (max-width: 992px) {
-  .blog_details_content_desc .comment textarea {
-    min-height: 150px;
-  }
   .blog_details_content_desc .blockquote .text {
     font-size: 0.75em;
   }

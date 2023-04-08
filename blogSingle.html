@@ -12,8 +12,8 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-5">
+            <div class="row align-items-center justify-content-md-center justify-content-between">
+                <div class="col-5 d-none d-md-block">
                     <nav class="header_menu">
                         <ul>
                             <li><a href="#">محصولات</a></li>
@@ -30,15 +30,67 @@
                 <div class="col-5">
                     <nav class="header_actions">
                         <ul>
-                            <li><a href="#"><i class="far fa-list"></i></a></li>
+                            <li><a href="#"><i class="far fa-list open d-md-none d-block"></i></a></li>
                             <li><a href="#"><i class="far fa-phone"></i></a></li>
-                            <li><a href="#"><i class="far fa-search"></i></a></li>
+                            <li><a href="#search"><i class="far fa-search"></i></a></li>
+                            <div id="search-box">
+                                <div class="container1">
+                                    <a class="close" href="#close"></a>
+                                    <div class="search-main">
+                                        <div class="search-inner">
+                                            <input type="text" id="inputSearch" name="firstname" placeholder="جستجو">
+                                            <span class="search-info">برای جستجو اینتر را بزنید</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+    <div class="overlay"></div>
+    <aside class="menuAside">
+        <ul class="menuAside_list">
+            <li>
+                <a href="">
+                    خانه
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    محصولات
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    سفارش محصول
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    کاتالوگ دیجیتال
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    تماس با ما
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    اخبار و مقالات
+                </a>
+            </li>
+        </ul>
+        <ul class="menuAside_social">
+            <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-telegram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+        </ul>
+    </aside>
 
     <main>
         <section class="shared_pageTitle">
@@ -168,30 +220,6 @@
                                         ویژه مدارس و دانشگاه ها ، راکت فلزیاب MD102 میباشد.
                                     </p>
                                 </blockquote>
-                                <div class="comment">
-                                    <h4 class="title">
-                                        نظر بدهید
-                                    </h4>
-                                    <p class="desc">
-                                        آدرس ایمیل شما منتشر نخواهد شد. فیلدهای الزامی مشخص شده اند
-                                    </p>
-                                    <form action="#">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <input type="text" placeholder="نام *" class="form-control">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="text" placeholder="آدرس ایمیل *" class="form-control">
-                                            </div>
-                                            <div class="col-md-12">
-                                                <textarea cols="74" rows="8" placeholder="نظر خود را اینجا تایپ کنید" class="form-control"></textarea>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <a href="#" class="btn btn-primary">ثبت نظر</a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
                             </div>
                         </div>
                     </div>
